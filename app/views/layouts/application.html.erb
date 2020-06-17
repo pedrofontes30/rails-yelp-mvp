@@ -12,7 +12,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="pb-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between border-bottom px-5">
+      <%= link_to 'Yelp', restaurants_path, class: 'navbar-brand' %>
+      <%= link_to icon('fas', 'plus'), new_restaurant_path %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

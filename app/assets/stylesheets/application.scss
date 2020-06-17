@@ -11,3 +11,18 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.font-small {
+  font-size: 13px;
+  opacity:0.5;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
